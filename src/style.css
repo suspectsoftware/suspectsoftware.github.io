@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    height: 97%;
+    background-color: rgb(42, 0, 114);
+}
+
+.centered-element {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    width: 100%
+}
+
+.footer {
+    height: 3%;
+    background-color: rgb(42, 0, 114);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(233, 233, 233);
+    padding-bottom: 5px;
+}
