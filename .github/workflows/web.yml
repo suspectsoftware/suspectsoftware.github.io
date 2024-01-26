@@ -37,17 +37,17 @@ jobs:
           node-version: "21"
 
       - name: Install dependencies
-        working-directory: next/web
+        working-directory: src
         run: npm install
 
       - name: Build
-        working-directory: next/web
+        working-directory: src
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: next/web/out
+          path: src/out
 
       - name: Deploy to GitHub Pages
         id: deployment
